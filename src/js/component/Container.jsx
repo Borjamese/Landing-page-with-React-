@@ -2,7 +2,7 @@ import React from "react";
 
 function Container(props) {
     return (
-      <div className="row">
+      <div>
         {props.children}
       </div>
     );
