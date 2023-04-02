@@ -1,25 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-
 function Navbar (props) {
-    return (
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#">Navbar</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div className="navbar-nav">
-      <a className="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a className="nav-item nav-link" href="#">Features</a>
-      <a className="nav-item nav-link" href="#">Pricing</a>
+  return (
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> React landing page de Borja</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">Precios</a>
+          </li>
+          
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-    );
+    </nav>
+  );
 }
-
 
 
 
