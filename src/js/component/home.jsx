@@ -11,13 +11,15 @@ const Home = () => {
 	return (
 	  <div>
 		<Navbar />
+		<Container>
 		<div className="container">
 		  <Jumbotron />
 		  <div className="row">
 			<Card /> <Card /> <Card />
 		  </div>
 		</div>
-	  </div>
+		</Container>
+		</div>
 	);
   };
 
